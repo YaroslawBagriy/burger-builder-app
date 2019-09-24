@@ -1,13 +1,13 @@
 import React, { Component  } from 'react';
 
-import Aux from '../../hoc/Aux';
+import Aux from '../Aux/Aux';
 import classes from './Layout.css';
-import Toolbar from '../Navigation/Toolbar/Toolbar';
+import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 
 // SideDrawer is in the Layout component since it
 // is a core part of the layout.
-import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
-
+import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
+ 
 class Layout extends Component {
 
     state = {

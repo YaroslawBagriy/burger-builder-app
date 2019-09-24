@@ -41,6 +41,8 @@ class BurgerIngredient extends Component {
     }
 } 
 
+// This should be done to all props
+// for added saftey
 BurgerIngredient.propTypes = {
     type: PropTypes.string.isRequired
 };

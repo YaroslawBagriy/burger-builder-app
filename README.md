@@ -1,6 +1,8 @@
 # burger-builder-app
 App created by following React - The Complete Guide Udemy course.
 
+https://www.udemy.com/course/react-the-complete-guide-incl-redux/
+
 
 # Burger Builder App Notes:
 

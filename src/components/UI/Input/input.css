@@ -5,10 +5,9 @@
 }
 
 .Label {
-    font-weight:  bold;
+    font-weight: bold;
     display: block;
     margin-bottom: 8px;
-    
 }
 
 .InputElement {
@@ -24,18 +23,10 @@
 
 .InputElement:focus {
     outline: none;
-    border: #ccc;
-    background-color: white;
-    font: inherit;
-    padding: 6px 10px;
+    background-color: #ccc;
 }
 
 .Invalid {
     border: 1px solid red;
-    background-color: salmon;
-}
-
-.ValidationError {
-    color: red;
-    margin: 5px 0;
+    background-color: #FDA49A;
 }

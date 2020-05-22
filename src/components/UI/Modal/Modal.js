@@ -6,30 +6,29 @@ import Backdrop from '../Backdrop/Backdrop';
 
 class Modal extends Component {
 
-    // Provides great improvment, won't update when not needed
-    shouldComponentUpdate(nextProps, nextState ) {
+    shouldComponentUpdate ( nextProps, nextState ) {
         return nextProps.show !== this.props.show || nextProps.children !== this.props.children;
     }
-    
-    componentWillUpdate() {
-        console.log('[Modal] WillUpdate')
+
+    componentWillUpdate () {
+        console.log('[Modal] WillUpdate');
     }
-    
+
     render () {
         return (
             <Aux>
-                <Backdrop show={ this.props.show } clicked={ this.props.modalClosed }/>
-                <div 
-                    className={ classes.Modal }
+                <Backdrop show={this.props.show} clicked={this.props.modalClosed} />
+                <div
+                    className={classes.Modal}
                     style={{
-                        transform: this.props.show ? 'translateY(0)' : 'translate(-100vh)',
+                        transform: this.props.show ? 'translateY(0)' : 'translateY(-100vh)',
                         opacity: this.props.show ? '1' : '0'
                     }}>
-                    { this.props.children }
+                    {this.props.children}
                 </div>
             </Aux>
-        );
+        )
     }
-};
+}
 
 export default Modal;
